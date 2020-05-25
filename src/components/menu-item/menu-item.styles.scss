@@ -5,7 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #000000;
+  border: 1px solid black;
   margin: 0 7.5px 15px;
   overflow: hidden;
 
@@ -16,7 +16,10 @@
     height: 100%;
   }
 
-  
+  &.large {
+    height: 380px;
+  }
+
   &:hover {
     cursor: pointer;
 
