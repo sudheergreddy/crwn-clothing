@@ -19,11 +19,11 @@ function Header(props) {
                 </Link>
                 {
                     (auth.currentUser) ?
-                        <Link className="option" onClick={()=>{
+                        <div className="option" onClick={()=>{
                             auth.signOut();
                         }}>
                             SIGN OUT
-                        </Link>
+                        </div>
                         :
                         <Link className="option" to="/signin">
                             SING IN

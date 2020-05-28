@@ -9,7 +9,7 @@ function CollectionPreview(props){
             <div className="preview">
                 {
                     props.items.filter((item, idx) => idx < 4).map(item => {
-                        return <CollectionItem id={item.id} name={item.name} imageUrl={item.imageUrl} price={item.price}/>
+                        return <CollectionItem key={item.id} name={item.name} imageUrl={item.imageUrl} price={item.price}/>
                     })
                 }
             </div>
