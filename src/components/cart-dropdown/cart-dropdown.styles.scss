@@ -10,12 +10,14 @@
     top: 80px;
     right: 70px;
     z-index: 5;
-
+    
     .cart-items{
         height: 240px;
         display: flex;
         flex-direction: column;
-        overflow: auto;
+        overflow-y: auto;
+        overflow-x: hidden;
+        scrollbar-color: black white;
     }
 
     button{
